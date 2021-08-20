@@ -883,8 +883,8 @@ h2.title {
 }
 
 .productinfo img{
-  width: 100%;
-}
+  max-width: 100%;
+   }
 
 .productinfo{
  position:relative;

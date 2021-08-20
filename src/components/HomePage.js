@@ -1,4 +1,6 @@
 import React from 'react'
+import Category from './Category'
+import Product from './Product'
 
 export default function HomePage() {
     return (
@@ -8,112 +10,7 @@ export default function HomePage() {
 				<div className="col-sm-3">
 					<div className="left-sidebar">
 						<h2>Category</h2>
-						<div className="panel-group category-products" id="accordian">
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-											<span className="badge pull-right"><i className="fa fa-plus"></i></span>
-											Sportswear
-										</a>
-									</h4>
-								</div>
-								<div id="sportswear" className="panel-collapse collapse">
-									<div className="panel-body">
-										<ul>
-											<li><a href="#">Nike </a></li>
-											<li><a href="#">Under Armour </a></li>
-											<li><a href="#">Adidas </a></li>
-											<li><a href="#">Puma</a></li>
-											<li><a href="#">ASICS </a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
-											<span className="badge pull-right"><i className="fa fa-plus"></i></span>
-											Mens
-										</a>
-									</h4>
-								</div>
-								<div id="mens" className="panel-collapse collapse">
-									<div className="panel-body">
-										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
-											<li><a href="#">Armani</a></li>
-											<li><a href="#">Prada</a></li>
-											<li><a href="#">Dolce and Gabbana</a></li>
-											<li><a href="#">Chanel</a></li>
-											<li><a href="#">Gucci</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
-											<span className="badge pull-right"><i className="fa fa-plus"></i></span>
-											Womens
-										</a>
-									</h4>
-								</div>
-								<div id="womens" className="panel-collapse collapse">
-									<div className="panel-body">
-										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Kids</a></h4>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Fashion</a></h4>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Households</a></h4>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Interiors</a></h4>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Clothing</a></h4>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Bags</a></h4>
-								</div>
-							</div>
-							<div className="panel panel-default">
-								<div className="panel-heading">
-									<h4 className="panel-title"><a href="#">Shoes</a></h4>
-								</div>
-							</div>
-						</div>
+					<Category/>
 					
 						<div className="brands_products">
 							<h2>Brands</h2>
@@ -146,162 +43,8 @@ export default function HomePage() {
 				</div>
 				
 				<div className="col-sm-9 padding-right">
-					<div className="features_items">
-						<h2 className="title text-center">Features Items</h2>
-						<div className="col-sm-4">
-							<div className="product-image-wrapper">
-								<div className="single-products">
-										<div className="productinfo text-center">
-											<img src="images/home/product1.jpg" alt="" />
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-										<div className="product-overlay">
-											<div className="overlay-content">
-												<h2>$56</h2>
-												<p>Easy Polo Black Edition</p>
-												<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-											</div>
-										</div>
-								</div>
-								<div className="choose">
-									<ul className="nav nav-pills nav-justified">
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div className="col-sm-4">
-							<div className="product-image-wrapper">
-								<div className="single-products">
-									<div className="productinfo text-center">
-										<img src="images/home/product2.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div className="product-overlay">
-										<div className="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div className="choose">
-									<ul className="nav nav-pills nav-justified">
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div className="col-sm-4">
-							<div className="product-image-wrapper">
-								<div className="single-products">
-									<div className="productinfo text-center">
-										<img src="images/home/product3.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div className="product-overlay">
-										<div className="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div className="choose">
-									<ul className="nav nav-pills nav-justified">
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div className="col-sm-4">
-							<div className="product-image-wrapper">
-								<div className="single-products">
-									<div className="productinfo text-center">
-										<img src="images/home/product4.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div className="product-overlay">
-										<div className="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-									<img src="images/home/new.png" className="new" alt="" />
-								</div>
-								<div className="choose">
-									<ul className="nav nav-pills nav-justified">
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div className="col-sm-4">
-							<div className="product-image-wrapper">
-								<div className="single-products">
-									<div className="productinfo text-center">
-										<img src="images/home/product5.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div className="product-overlay">
-										<div className="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-									<img src="images/home/sale.png" className="new" alt="" />
-								</div>
-								<div className="choose">
-									<ul className="nav nav-pills nav-justified">
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div className="col-sm-4">
-							<div className="product-image-wrapper">
-								<div className="single-products">
-									<div className="productinfo text-center">
-										<img src="images/home/product6.jpg" alt="" />
-										<h2>$56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-									</div>
-									<div className="product-overlay">
-										<div className="overlay-content">
-											<h2>$56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-								</div>
-								<div className="choose">
-									<ul className="nav nav-pills nav-justified">
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href="#"><i className="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-					</div>
+					
+					<Product/>
 					
 					<div className="category-tab">
 						<div className="col-sm-12">
@@ -691,7 +434,7 @@ export default function HomePage() {
 				</div>
 			</div>
 		</div>
-	</section>
+ 	</section>
 	
     )
     
